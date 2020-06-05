@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}<title>{{news.about}}</title>{% endblock %}
+{% block body %}
+<style>
+    .details{  
+    padding:100px;  
+    border:1px solid black;  
+    border-radius:10px;  
+    float:right;  
+    margin-top:10px
+    }
+</style>
+<body>
+    <h2> <b><center>{{news.title}}</center></b></h2>
+    <div>
+        <center> <img src="/media/{{news.img}}" width="600" height="400"> </center>
+    </div>
+    <br>
+    <br>
+
+    <div >
+        <p>
+       <strong><h3>{{news.details}} </strong></h3>
+        </p>
+
+    </div>
+</body>
+{% endblock %}

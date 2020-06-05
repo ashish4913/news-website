@@ -1,0 +1,26 @@
+{% extends "back/master.html"%}
+{% load static %}
+{% block mainblock %}
+  <!-- Datatables Header -->
+  <div class="content-header">
+    <div class="header-section">
+        <h3><b>ERROR</b></h3>
+        <br>
+        <h3>{{error}}</h3>
+    </div>
+</div>
+
+
+
+
+    
+
+   
+<!-- END Datatables Content -->
+
+{% endblock %}
+{% block js %}
+ <!-- Load and execute javascript code used only in this page -->
+ <script src="{% static 'back/js/pages/tablesDatatables.js' %}"></script>
+ <script>$(function(){ TablesDatatables.init(); });</script>
+{% endblock %}
